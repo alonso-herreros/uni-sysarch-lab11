@@ -5,25 +5,28 @@
 
 ---
 
-| Owner name | Student ID @ UC3M (NIA) | Main branch |
-| :---: | :---: | :---: |
-| Alonso Herreros Copete | 100493990 | `main` |
+## Statement files
 
-## Compilation & execution
-To compile and execute a problem's code, you may use these commands inside the repo (not from the src folder) with the relevant filename:
-```bash
-gcc ./src/[filename].c -o ./bin/[filename] -g -Wall
-chmod o+rx ./bin/[filename]
-./bin/[filename]
-```
+* [Problem statements PDF](./Instructions.pdf)
+* [Problem statements Markdown](./Statements.md)
+
 
 ## Completion Summary
 
-| Problem | Status |
-| --- | :---: |
-| Problem 1 | - |
-| Problem 2 | - |
-| Problem 3 | - |
-| Problem 4 | - |
-| Problem 5 | - |
-| Problem 6 | - |
+| Problem | Status | Comment
+| --- | :---: | --- |
+| [Problem 1][i1] | - | |
+| [Problem 2][i2] | - | |
+| [Problem 3][i3] | - | |
+| [Problem 4][i4] | - | |
+| [Problem 5][i5] | - | |
+| [Problem 6][i6] | - | |
+
+
+[i1]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/1
+[i2]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/2
+[i3]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/3
+[i4]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/4
+[i5]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/5
+[i6]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/6
+
