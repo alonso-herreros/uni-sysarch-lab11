@@ -10,7 +10,6 @@
 * [Problem statements PDF](./Instructions.pdf)
 * [Problem statements Markdown](./Statements.md)
 
-
 ## Completion Summary
 
 | Problem | Status | Comment
@@ -22,11 +21,9 @@
 | [Problem 5][i5] | - | |
 | [Problem 6][i6] | - | |
 
-
 [i1]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/1
 [i2]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/2
 [i3]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/3
 [i4]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/4
 [i5]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/5
 [i6]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/6
-
