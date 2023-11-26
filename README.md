@@ -17,7 +17,7 @@
 | [Problem 1][i1] | Done | |
 | [Problem 2][i2] | Done | |
 | [Problem 3][i3] | Done | |
-| [Problem 4][i4] | - | |
+| [Problem 4][i4] | Done | |
 | [Problem 5][i5] | - | |
 | [Problem 6][i6] | - | |
 
