@@ -30,9 +30,10 @@ protected by a while loop that checks the value of the shared variable `turn` be
 the critical section. Since each process will only enter the critical section if the other process
 has set `turn` to its own value, only one process can be in the critical section at a time.
 
-This solution does not satisfy the **progress** requirement, since it is possible for a process to
-be stuck in the while loop forever. If one process enters loop, it will change the value of the
-turn `turn` variable, and the other process will _starve_.
+This solution does not satisfy the **progress** requirement, since it is possible for a process
+to set the turn to the other process's value, while the other process doesn't need it. If the other
+process then doesn't access the critical section, the first process will be stuck waiting for the
+other process to yield the turn, even if the critical section is not being used.
 
 This solution satisfies the **bounded waiting** requirement, since the process will wait until a
 condition is met, and not indefinitely. The process will wait until the `turn` variable is set to
