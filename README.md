@@ -18,7 +18,7 @@
 | [Problem 2][i2] | Done | |
 | [Problem 3][i3] | Done | |
 | [Problem 4][i4] | Done | |
-| [Problem 5][i5] | - | |
+| [Problem 5][i5] | Done | |
 | [Problem 6][i6] | - | |
 
 [i1]: https://github.com/alonso-herreros/uni-sysarch-lab11/issues/1
