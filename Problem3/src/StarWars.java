@@ -32,11 +32,17 @@ import java.util.*;
 *
 */
 
-class Lock{
+class Lock {
     private int value = 0;
-    public void espero(){
+    public synchronized void espero(){
+        while (value == 0) {
+            try { wait(); } catch (InterruptedException e) {}
+        }
+        value = 0;
     }
-    public void aviso(){
+    public synchronized void aviso(){
+            value++;
+            notifyAll();
     }
 }
 
@@ -48,15 +54,21 @@ class Luke extends Thread{
     }
     public void run(){
         Random rnd = new Random();
+        lockDV.espero();
         System.out.println("(Luke): He told me enough! He told me YOU killed him!");
+        lockLS.aviso();
         try {
             Thread.sleep(rnd.nextInt(2000));
         } catch (Exception e) {}
+        lockDV.espero();
         System.out.println("(Luke): No. No. That's not true. That's impossible!");
+        lockLS.aviso();
         try {
             Thread.sleep(rnd.nextInt(2000));
         } catch (Exception e) {}
+        lockDV.espero();
         System.out.println("(Luke): No! No!");
+        lockLS.aviso();
     }
 }
 
@@ -69,14 +81,19 @@ class DarthVader extends Thread{
     public void run(){
         Random rnd = new Random();
         System.out.println("(DV): If you only knew the power of the Dark Side. Obi-Wan never told you what happened to your father.");
+        lockDV.aviso();
         try {
             Thread.sleep(rnd.nextInt(2000));
         } catch (Exception e) {}
+        lockLS.espero();
         System.out.println("(DV): No. I am your father.");
+        lockDV.aviso();
         try {
             Thread.sleep(rnd.nextInt(2000));
         } catch (Exception e) {}
+        lockLS.espero();
         System.out.println("(DV): Search your feelings, you KNOW it to be true!");
+        lockDV.aviso();
     }
 }
 
